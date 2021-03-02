@@ -21,7 +21,7 @@ While doing my apprenticeship, I built an android health application that used G
 ``Designed & Developed`` by – Subal Adhikari – subaladhikari01@gmail.com
 
 Visit my ``portfolio`` for more information.
-[https://subaladhikari.github.io/subaladhikari/]
+[https://subaladhikari.github.io/portfolio/]
 
 ## Contributing
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
