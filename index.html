@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <!-- Title and icon -->
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png" />
+    <title>Minutely | Fitness Tracker</title>
+    <!-- Leaflet library import -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Custom JS -->
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Workout data button -->
+    <button class="btn nav-btn open-btn" id="open-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Info data button -->
+    <button class="btn nav-btn info-btn" id="info-btn">
+      <i class="far fa-question-circle"></i>
+    </button>
+
+    <!-- Leaflet map -->
+    <div id="map"></div>
+
+    <!-- Info Toast message -->
+    <div id="toasts"></div>
+
+    <!-- Sidenav -->
+    <div class="nav nav-primary-color">
+      <div class="nav nav-dark-color sidebar">
+        <!-- Top logo -->
+        <div class="wrapper">
+          <img src="./img/logo.png" alt="Logo" class="logo" />
+        </div>
+        <!-- Workout contents -->
+        <ul class="workouts">
+          <form class="form hidden">
+            <!-- Type of workout -->
+            <div class="form__row">
+              <label class="form__label upper-case">Type</label>
+              <select class="form__input form__input--type">
+                <option value="running">Running</option>
+                <option value="jogging">Jogging</option>
+              </select>
+            </div>
+            <!-- Total distance -->
+            <div class="form__row">
+              <label class="form__label upper-case">Distance</label>
+              <input
+                class="form__input form__input--distance"
+                placeholder=" km"
+              />
+            </div>
+            <!-- Duration of workout -->
+            <div class="form__row">
+              <label class="form__label upper-case">Duration</label>
+              <input
+                class="form__input form__input--duration"
+                placeholder=" min"
+              />
+            </div>
+            <!-- Pedals or steps per minute -->
+            <div class="form__row">
+              <label class="form__label upper-case">Cadence</label>
+              <input
+                class="form__input form__input--cadence"
+                placeholder=" step/min"
+              />
+            </div>
+            <!-- Submit button -->
+            <div class="form_row">
+              <button
+                type="button"
+                id="form__submit"
+                class="btn form__btn upper-case"
+              >
+                Submit
+              </button>
+            </div>
+            <!-- Cancel button -->
+            <div class="form_row">
+              <button
+                type="button"
+                id="form__cancel"
+                class="btn form__btn ctc-btn upper-case"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </ul>
+        <!-- Workout contents -->
+        <!-- Footer items -->
+        <footer class="wrapper wrapper-col">
+          <p class="copyright">&copy; 2021 Minutely.</p>
+          <div class="wrapper">
+            <!-- Local storage reset and close sidenav button -->
+            <button class="btn cta-btn ctc-btn" id="reset">Reset</button>
+            <button class="btn cta-btn" id="cancel-btn">Close</button>
+          </div>
+        </footer>
+        <!-- Footer items -->
+      </div>
+    </div>
+  </body>
+</html>
