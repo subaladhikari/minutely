@@ -15,13 +15,10 @@ The site is built with HTML, CSS, Vanilla JS, & Leaflet library.
     * Firebase integration for data storage - Work in progress.
 
 ## Development
-While doing my apprenticeship, I built an android health application that used Google Maps API to recommend healthy meals from local restaurants in NYC. As part of planning I wanted to add cardio data like a fitness tracker but the idea was scraped due to time constraints and app functionality. Hence, I created this website that does just that. 
+While doing my apprenticeship, I built an android health application that used Google Maps API to recommend healthy meals from local restaurants in NYC. As part of planning I wanted to add cardio data like a fitness tracker but the idea was scraped due to time constraints and app functionality. Hence, I created this website that does just that. Archieved Collection.
 
 ## Owner
 ``Designed & Developed`` by – Subal Adhikari – subaladhikari01@gmail.com
-
-Visit my ``portfolio`` for more information.
-[https://subaladhikari.github.io/portfolio/]
 
 ## Contributing
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
